@@ -1,5 +1,7 @@
 // home.js
 
+import kafeImg from './assets/kafeSerefe.png';
+
 function renderHome(){
     console.log("Home module loaded");
     const content = document.getElementById('content');
@@ -13,7 +15,7 @@ function renderHome(){
     content.appendChild(homeDiv);
 
     const homeImg = document.createElement('img');
-    homeImg.src="./assets/KafeSerefe.png";
+    homeImg.src = kafeImg; // use imported url
     homeImg.alt="Kafe Serefe Image";
     homeImg.style.width = "580px";
     homeImg.style.height = "400px";

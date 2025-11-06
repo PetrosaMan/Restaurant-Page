@@ -3,6 +3,7 @@
 import { renderHome } from "./home-module.js";
 import { renderMenu } from "./menu-module.js";
 import { renderAbout } from "./about-module.js";
+//import kafeImg from './assets/kafeSerefe.png';
 
 // Get references to main application elements
 // (buttons and content container)
@@ -35,7 +36,7 @@ homeBtn.classList.add('active'); // Set home button to active
  * Explanation: when browser loads
  * 
  * 1. It executes index.js from top to bottom.
- * 2. It imports the render functions from three moduels.
+ * 2. It imports the render functions from three modules.
  * 3. Modules are home-module.js, menu-module.js, about-module.js.
  * 4. It sets up event listeners for the buttons.
  * 5. Finally, it calls renderHome() to display the home content by default.
