@@ -1,4 +1,16 @@
-body {
-background-color: #fff8dc;
+/* src/style.css */ 
 
+body {
+  background-color: #fff8dc;
 }
+
+#parent {
+  display: flex;
+  border: 1px solid red;
+}
+
+.childButton {
+    width: 200px;
+}
+  
+  

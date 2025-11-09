@@ -3,6 +3,7 @@
 import { renderHome } from "./home-module.js";
 import { renderMenu } from "./menu-module.js";
 import { renderAbout } from "./about-module.js";
+import './style.css';
 //import kafeImg from './assets/kafeSerefe.png';
 
 // Get references to main application elements
