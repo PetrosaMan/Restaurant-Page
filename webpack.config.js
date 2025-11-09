@@ -1,13 +1,13 @@
 // webpack.config.js
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { watch } = require("fs");
+//const { watch } = require("fs");
 
 module.exports = {
   mode: "development", //production 
   entry: "./src/index.js",
   output: {
-    filename: "index.js",
+    filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -18,9 +18,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/template.html",
-      scriptLoading: "defer",
-      inject: false, // Prevent automatic injection of scripts
-        }),
+      scriptLoading: "defer"
+    }),
   ],
   // loaders
   module: {
