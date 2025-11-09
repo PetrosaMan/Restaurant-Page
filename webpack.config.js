@@ -4,10 +4,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { watch } = require("fs");
 
 module.exports = {
-  mode: "development",
+  mode: "development", //production 
   entry: "./src/index.js",
   output: {
-    filename: "main.js",
+    filename: "index.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -19,8 +19,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/template.html",
       scriptLoading: "defer",
-    }),
+      inject: false, // Prevent automatic injection of scripts
+        }),
   ],
+  // loaders
   module: {
     rules: [
       {
