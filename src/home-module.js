@@ -9,6 +9,7 @@ function renderHome(){
 
     const homeH1 = document.createElement('h1');
     homeH1.textContent = "Kafe Serefe";
+    homeH1.classList.add('home-text');
     content.appendChild(homeH1);
 
     const homeDiv = document.createElement('div');
