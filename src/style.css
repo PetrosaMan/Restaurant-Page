@@ -1,16 +1,35 @@
 /* src/style.css */ 
 
 body {
-  background-color: #fff8dc;
+  background-color: #f1f1f1;
 }
 
-#parent {
+#content {
   display: flex;
+  flex-direction: column;
   border: 1px solid red;
+}  
+
+.tabButton {   
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s; /* smooth transition for hover effects*/
+    font-size: 17px;    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;     
 }
 
-.childButton {
-    width: 200px;
+.tabButton.selected {
+  background-color: green;
+
 }
+
+
+
+
+
+
   
   
