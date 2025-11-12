@@ -35,10 +35,10 @@ p {
 }
 
 .home-text {
-  color: red;
+  color: blue;
 }
 
-#home-btn {
+#home-btn , #menu-btn, #about-btn {
   background-color: azure;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
