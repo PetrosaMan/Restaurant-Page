@@ -1,7 +1,7 @@
 function renderAbout(){    
     const content = document.getElementById('content');
     content.innerHTML = ''; // Clear existing content
-    //content.style.height = "800px";
+    //content.style.height = "500px";
     
     const sectionAbout = document.createElement('section');
     sectionAbout.classList.add('about');    
@@ -19,12 +19,16 @@ function renderAbout(){
     sectionAbout.appendChild(phone);
     
     const email = document.createElement('p');
-    email.textContent = "email: serefe@kafeserefe.com";
+    email.textContent = "email: serefe@kafeserefe.co.uk";
     sectionAbout.appendChild(email);
     
     const openingHours = document.createElement('p');
     openingHours.textContent = "Lunch: 12pm - 3pm (Tue - Sun) | Dinner: 6pm - 11pm (Tue - Sat)";
     sectionAbout.appendChild(openingHours);
+
+    const footer = document.createElement('footer');
+    footer.textContent = "By: PetrosaMan, Odin Project 2025";
+    sectionAbout.appendChild(footer);
 
     content.appendChild(sectionAbout);
 }
