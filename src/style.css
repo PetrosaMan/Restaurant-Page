@@ -1,5 +1,12 @@
 /* src/style.css */ 
 
+* {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  /*box-sizing: border-box; */
+}
+
 body {  
   background-color: beige;
 
@@ -75,18 +82,35 @@ p {
   justify-content: flex-end;
 }
 
+.about h1 {
+   font-size: 30px;
+   text-align: left;
+   margin: 20px;
+}
+
 footer {
-  margin-left: 20px;
-  margin-top: 20px;
-  font-size: 10px;  
+  text-align: right;
+  font-size: 15px;
+  padding: 20px;
+  color: brown; 
+}
+
+.menu {
+  margin: 15px;
 }
 
 .menu p {
-  margin: 10px;
+  margin: 5px;
 }
 
 .menu h2 {
+  font-size: 25px;
   margin: 10px;
+}
+
+.menu h1 {
+  font-size: 30px;  
+  margin-left: 10px;
 }
 
 
