@@ -13,7 +13,11 @@ module.exports = {
   },
   devtool: "eval-source-map",
   devServer: {
-    watchFiles: ["./src/template.html"],    
+    static: './dist',
+    watchFiles: ["./src/template.html"], 
+    port: 8080, // default port
+    open: true, // opens browser automatically   
+    hot: true,  // enables hot module replacement
   },  
   plugins: [
     new HtmlWebpackPlugin({
