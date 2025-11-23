@@ -1,4 +1,5 @@
-function renderAbout(){    
+function renderAbout(){ 
+
     const content = document.getElementById('content');
     content.innerHTML = ''; // Clear existing content
     //content.style.height = "500px";
@@ -31,6 +32,7 @@ function renderAbout(){
     sectionAbout.appendChild(footer);
 
     content.appendChild(sectionAbout);
+    
 }
 
 export {renderAbout};

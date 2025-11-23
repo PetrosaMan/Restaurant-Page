@@ -6,41 +6,33 @@ import { renderAbout } from "./about-module.js";
 import './style.css';
 import kafeImg from './assets/kafeSerefe.png';
 
-// Get references to main application elements
-// (buttons and content container)
-const homeBtn = document.getElementById('home-btn');
-const menuBtn = document.getElementById('menu-btn');
-const aboutBtn = document.getElementById('about-btn');
+const tab_1 = document.querySelector('.tab-1');
+const tab_2 = document.querySelector('.tab-2');
+const tab_3 = document.querySelector('.tab-3');
 
-// --- Button Event Listeners Logic ---
-// Logic to handle button clicks and render appropriate modules
+tab_1.style.backgroundColor = 'red';
+tab_2.style.backgroundColor = 'green';
+tab_3.style.backgroundColor = 'green';
 
-homeBtn.addEventListener('click', () => {
+tab_1.addEventListener('click', () => {
+    console.log('tab-1 clicked');
+    tab_1.style.backgroundColor = 'red';
+    tab_2.style.backgroundColor = 'green';
+    tab_3.style.backgroundColor = 'green';
     renderHome();
 });
 
-menuBtn.addEventListener('click', () => {
-    renderMenu();
+tab_2.addEventListener('click', () => {
+    console.log('tab-2 clicked');
+    tab_2.style.backgroundColor = 'red';
+    tab_1.style.backgroundColor = 'green';
+    tab_3.style.backgroundColor = 'green';
 });
 
-aboutBtn.addEventListener('click', () => {
-    renderAbout();
+tab_3.addEventListener('click', () => {
+    console.log('tab-3 clicked');
+    tab_3.style.backgroundColor = 'red';
+    tab_1.style.backgroundColor = 'green';
+    tab_2.style.backgroundColor = 'green';
 });
 
-// -----------------------------------------------
-// Final step: call the home tab function to set default view
-// -----------------------------------------------
-renderHome(); // Display home content by default
-homeBtn.classList.add('active'); // Set home button to active
-
-/**
- * Explanation: when browser loads
- * 
- * 1. It executes index.js from top to bottom.
- * 2. It imports the render functions from three modules.
- * 3. Modules are home-module.js, menu-module.js, about-module.js.
- * 4. It sets up event listeners for the buttons.
- * 5. Finally, it calls renderHome() to display the home content by default.
- * 6. The home button is marked as active.
- * 
- */

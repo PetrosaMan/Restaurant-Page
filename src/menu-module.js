@@ -1,4 +1,5 @@
 function renderMenu(){
+    
     console.log("Menu module loaded");
     const content = document.getElementById('content');
     content.innerHTML = ''; // Clear existing content
@@ -55,6 +56,7 @@ function renderMenu(){
     sectionMenu.appendChild(dessert); 
     
     content.appendChild(sectionMenu);
+    
 }
 
 export {renderMenu};
