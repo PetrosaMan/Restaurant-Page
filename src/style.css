@@ -90,7 +90,7 @@ img {
     padding: 10px;
 }
 
-.menu p {
+.menu:first-child {
     font-size: 20px;
     color: brown;
     margin: 10px 0;    
