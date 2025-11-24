@@ -7,11 +7,13 @@
 
 body {
     box-sizing: border-box;
-    height: 100vh
+    height: 100vh;
+    background-color: #fff5ee;
+    overflow-y: hidden;
 }
 
 .tab-1 {
-    background-color: #ff0000; 
+    background-color: #6ed86e; 
 }
 
 .tab-1,
@@ -19,6 +21,8 @@ body {
 .tab-3 {
     width: 150px;
     height: 50px;
+    color: brown;
+    font-size: 20px;
     border-top-left-radius: 10px; 
     border-top-right-radius: 10px;
     border: none;
@@ -31,51 +35,45 @@ body {
 .tab-3:active {
     transform: translateY(4px); /*Button press effect*/
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /*Reduce shadowto simulate pressing*/
-    background-color: #572a2a; /*Darker background on active state*/
+    background-color: #fff5ee; /*Darker background on active state*/
 }
 
 .container {
-
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 20px; /*Space between items*/
+    gap: 15px; /*Space between items*/
     padding: 20px; /*Padding around the container*/
     justify-content: flex-start; /*Center items horizontally*/
-    align-items: center; /*Center vertically*/
-    border: 5px solid red;
-    margin: 10px;        
+    align-items: center; /*Center vertically*/    
+    margin: 10px;
+    background-color: #fff5ee;        
 }
 
 .title {
     font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 20px; /*Space below title*/
-    border: 1px solid blue;
+    font-weight: bold;   
+    color: brown;
 }
 
 .tabs {
     display: flex;
-    gap: 25px; /*Space between tabs*/  
-    border: 2px solid brown;   
+    gap: 5px; /*Space between tabs*/                  
 }
 
-#content{
-   /* width: 80%;*/
-    /*height: 300px;*/
-    margin-top: 10px; /*Space above content area*/
-   /*border: 2px solid green;*/
+#content{   
+    margin-top: 10px; /*Space above content area*/   
 }
 
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding-bottom: 25px;
 }
 
 .home-text {    
-   color: blue;
+   color: brown;
    font-size: 24px;
    text-align: center;
    margin: 20px;      
@@ -85,8 +83,9 @@ img {
     position: sticky;
     bottom: 0;    
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: #fff5ee;
     text-align: center;
-    padding: 10px 0;
-    border: 1px solid black;
+    padding: 10px 0;    
+    color: brown;
+    padding: 10px;
 }
