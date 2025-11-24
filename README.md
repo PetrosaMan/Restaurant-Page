@@ -40,7 +40,7 @@ dist
 2. Write the tab-switching logic inside of index.js. You should have event listeners for each button in the header navbar that wipes out the current contents of div#content and then runs the correct ‘tab module’ to populate it with the new contents again.
 
 **Deployment**
-1. Let’s deploy your project to GitHub pages! This is a little more work than it has been for previous projects, because GitHub Pages tries to look for an `index.html` `in the root of your project`, but yours is inside `dist`! We will need to do a few steps to push the contents of your dist directory to its own branch on GitHub, which will then have a root-level `index.html` for GitHub pages to serve.
+1. Let’s deploy your project to GitHub pages! This is a little more work than it has been for previous projects, because GitHub Pages tries to look for an `index.html` *in the root of your project*, but yours is inside `dist`! We will need to do a few steps to *push the contents of your* dist directory to its own branch on GitHub, which will then have a root-level `index.html` for GitHub pages to serve.
 
 You don’t need to know exactly what all the commands do - as long as you follow the instructions below carefully you should be fine. You can use these instructions to deploy your project initially, and also redeploy it again if you make more changes to your project later.
 
