@@ -27,6 +27,7 @@ tab_2.addEventListener('click', () => {
     tab_2.style.backgroundColor = '#6ed86e';
     tab_1.style.backgroundColor = '#ccffcc';
     tab_3.style.backgroundColor = '#ccffcc';
+    renderMenu();
 });
 
 tab_3.addEventListener('click', () => {
@@ -34,5 +35,8 @@ tab_3.addEventListener('click', () => {
     tab_3.style.backgroundColor = '#6ed86e';
     tab_1.style.backgroundColor = '#ccffcc';
     tab_2.style.backgroundColor = '#ccffcc';
+    renderAbout();
 });
+
+document.getElementById("defaultOpen").click();
 
