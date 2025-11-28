@@ -13,7 +13,7 @@ body {
 }
 
 .tab-1 {
-    background-color: #6ed86e; 
+    background-color: #b7a89d; 
 }
 
 .tab-1,
@@ -21,10 +21,10 @@ body {
 .tab-3 {
     width: 150px;
     height: 50px;
-    color: brown;
+    color: brown;    
     font-size: 20px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid brown;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease; /*Smooth transition*/
 }

@@ -4,7 +4,7 @@
 **Introduction**
 Let’s use what we’ve learned and take a chance to continue practicing DOM manipulation by dynamically rendering a restaurant homepage! By the end, we are going to be using JavaScript alone to generate the entire contents of the website!
 
-**Note: DOM elements should be creategitd using JavaScript but styling can be done in a separate CSS file.**
+**Note: DOM elements should be created using JavaScript but styling can be done in a separate CSS file.**
 
 **.gitignore**
 When working with packages that are installed with npm, you don’t need to track the contents of `node_modules` with git, nor push those files to GitHub. As we learned in the [npm lesson]https://www.theodinproject.com/lessons/node-path-javascript-npm, the `package.json` file contains all the dependency information, so that anyone can clone your project and install them on their machine with `npm install`.
